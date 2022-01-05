@@ -1,6 +1,6 @@
-#CSS Clamp and min() max()
+# CSS clamp() and min() max()
 
-##Code pen
+## Code pen
 ```
 <div class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="YzrvENp" data-user="bryce-robinson"  data-prefill='{"tags":[],"scripts":[],"stylesheets":[]}'>
   <pre data-lang="html">&lt;div class="a">Box A min()&lt;/div>
@@ -37,8 +37,9 @@
 
 ```
 
+---
 
-###CSS min()
+### CSS min()
 *example*
 ```
 width: min(50vw, 500px)
@@ -47,7 +48,7 @@ width: min(50vw, 500px)
 
 This means the width of the div will be up to 500px, however, if the div is smaller than 50% of the VW, it will take up 50vw.
 
-###CSS max()
+### CSS max()
 *example*
 ```
 width: max(50vw, 500px)
@@ -55,7 +56,9 @@ width: max(50vw, 500px)
 ```
 The minimum the div will be is 500px, or 50vw depending on which one is larger.
 
-###CSS clamp()
+---
+
+### CSS clamp()
 *example*
 ```
 width: clamp(500px, 10vw, 1200px)
@@ -67,6 +70,7 @@ clamp(minimum value, preferred-value, max-value)
 
 The preferred value will be used as long as it's within the min and max values.
 
+---
 
 *References*
 [Clamp()](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp());
