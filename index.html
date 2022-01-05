@@ -1,0 +1,31 @@
+<div class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="YzrvENp" data-user="bryce-robinson"  data-prefill='{"tags":[],"scripts":[],"stylesheets":[]}'>
+  <pre data-lang="html">&lt;div class="a">Box A min()&lt;/div>
+&lt;div class="b">Box B max()&lt;/div>
+&lt;div class="c">Box C clamp()&lt;/div>
+</pre>
+  <pre data-lang="css">div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 10px;
+}
+.a{
+  width: min(10vw, 500px);
+  height: min(10vw, 500px);
+  background-color: red;
+}
+
+.b{
+  width: max(10vw, 500px);
+  height: max(10vw, 500px);
+  background-color: blue;
+}
+
+.c{
+  width: clamp(500px, 10vw, 1200px);
+  height: clamp(500px, 10vw, 1200px);
+  background-color:  green;
+  
+}</pre></div>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
